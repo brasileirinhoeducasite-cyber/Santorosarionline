@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rosary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fonte cursiva -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+    <h1 id="santoRosarioOnline">Santo Rosário Online</h1>
+</header>
+
+<!-- Botão Menu (inicialmente escondido) -->
+<button id="btnMenu" style="display:none;">home</button> </button>
+
+<section id="botoes">
+    <div class="btns">
+        <button id="input-rosario" onclick="rosarioInteiro()">Santo Rosário</button>
+        <button id="input-terço" onclick="escolhaTerco()">Terço</button>
+    </div>
+    <div id="selecaoTercos" class="btns">
+        <button id="Gozosos(Segundas e sábados)"onclick="misteriosgozosos()">Gozosos(Segundas e sábados)</button>
+        <button id="Dolorosos(Terças e sextas)"onclick="misteriosdolorosos()">Dolorosos(Terças e sextas)</button>
+        <button id="Gloriosos(Quartas e domingos)"onclick="misteriosgloriosos()">Gloriosos(Quartas e domingos)</button>
+        <button id="Luminosos(Quintas)" onclick="misteriosluminosos()">Luminosos(Quintas)</button>
+    </div>
+</section>
+
+<section>
+    <div id="container"></div>
+    <div id="tresmarias" style="display: none;">
+        <div class="tresmarias ball"></div>
+        <div class="tresmarias ball"></div>
+        <div class="tresmarias ball"></div>
+    </div>
+    <div id="divBolas" style="display: none;">
+        <ul>
+            <li><div class="ball"></div></li>
+            <li><div class="ball"></div></li>
+            <li><div class="ball"></div></li>
+            <li><div class="ball"></div></li>
+            <li><div class="ball"></div></li>
+            <li><div class="ball"></div></li>
+            <li><div class="ball"></div></li>
+            <li><div class="ball"></div></li>
+            <li><div class="ball"></div></li>
+            <li><div class="ball"></div></li>
+        </ul>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

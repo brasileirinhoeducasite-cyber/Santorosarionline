@@ -1,0 +1,161 @@
+/*--------selecao ----------*/
+#selecaoTercos {
+  display: none;
+}
+
+/*----------home------------*/
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Dancing Script', cursive;
+  cursor: default;
+}
+
+body {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 20%;
+  background-color: #d0e7f9; /* azul clarinho e calmo */
+}
+
+.ball {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  margin: 1rem 0.5rem;
+  background-color: #a4c8e1; /* azul claro padrão */
+  cursor: pointer;
+  list-style-type: none;
+  transition: 0.3s ease;
+}
+.ball:hover {
+  transform: scale(1.05);
+  background-color: #8fb6d4; /* azul levemente mais escuro */
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  font-size: 1.2rem;
+  width: 90%;
+  padding: 2rem 5%;
+  background-color: rgba(164, 200, 225, 0.2);
+  border-radius: 30px;
+  color: #4b6587;
+}
+
+h1 {
+  font-size: 2.6rem;
+  padding: 2rem 0;
+  color: #3b5f7b;
+}
+
+/* Fade transitions para container */
+#container {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+.fade-out {
+  opacity: 0;
+}
+.fade-in {
+  opacity: 1;
+}
+
+#divBolas,
+#tresmarias {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+#santoRosarioOnline {
+  padding: 15vh 0;
+  color: #5a7d9a;
+}
+
+/* Botões */
+button {
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  border: none;
+  background-color: #a4c8e1;
+  transition: 0.3s ease;
+  color: #ffffff;
+}
+button:hover {
+  transform: scale(1.05);
+  background-color: #8fb6d4;
+}
+
+#botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 1050px) {
+  body {
+    padding: 10vh 30px;
+  }
+  h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  p {
+    font-size: 0.8rem;
+    width: 100%;
+    padding: 2rem 5px;
+  }
+  h1 {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+  }
+  button {
+    font-size: 0.8rem;
+  }
+  #divBolas {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+  .ball {
+    width: 1.8em;
+    height: 1.8em;
+    border-radius: 50%;
+    margin: 1rem 0.18rem;
+    background-color: #a4c8e1;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .ball:hover {
+    background-color: #8fb6d4;
+    transform: scale(1.05);
+  }
+  #selecaoTercos {
+    flex-direction: column;
+    padding-left: 20%;
+    gap: 5px;
+    width: 60%;
+  }
+}
